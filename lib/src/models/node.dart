@@ -169,15 +169,17 @@ class Node<T> {
 
   @override
   int get hashCode {
-    return hashValues(
-      key,
-      label,
-      icon,
-      iconColor,
-      selectedIconColor,
-      expanded,
-      parent,
-      children,
+    return Object.hashAll(
+      [
+        key,
+        label,
+        icon,
+        iconColor,
+        selectedIconColor,
+        expanded,
+        parent,
+        children,
+      ],
     );
   }
 

@@ -129,6 +129,12 @@ class ExpanderThemeData {
   }
 
   @override
-  int get hashCode =>
-      hashValues(color, position, type, size, modifier, animated);
+  int get hashCode => Object.hashAll([
+        color,
+        position,
+        type,
+        size,
+        modifier,
+        animated,
+      ]);
 }

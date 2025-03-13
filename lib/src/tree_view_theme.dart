@@ -154,19 +154,20 @@ class TreeViewTheme {
 
   @override
   int get hashCode {
-    return hashValues(
-        colorScheme,
-        levelPadding,
-        iconPadding,
-        iconTheme,
-        expanderTheme,
-        labelStyle,
-        dense,
-        verticalSpacing,
-        horizontalSpacing,
-        parentLabelStyle,
-        labelOverflow,
-        parentLabelOverflow);
+    return Object.hashAll([
+      colorScheme,
+      levelPadding,
+      iconPadding,
+      iconTheme,
+      expanderTheme,
+      labelStyle,
+      dense,
+      verticalSpacing,
+      horizontalSpacing,
+      parentLabelStyle,
+      labelOverflow,
+      parentLabelOverflow
+    ]);
   }
 
   @override
